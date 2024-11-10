@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول الفيديو الجزائري</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-DJYOs7HC.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>محول الفيديو الجزائري</h1>
+            <p class="subtitle">تحويل صيغ الفيديو بتقنية متطورة</p>
+        </header>
+
+        <main>
+            <div class="upload-methods">
+                <div class="upload-section">
+                    <label for="videoInput" class="upload-btn">اختيار ملفات</label>
+                    <input type="file" id="videoInput" accept="video/*" multiple hidden>
+                </div>
+                
+                <div class="url-section">
+                    <input type="text" id="videoUrl" placeholder="أدخل رابط الفيديو" class="url-input">
+                    <button id="addUrlBtn" class="url-btn">إضافة</button>
+                </div>
+            </div>
+
+            <div class="format-selection">
+                <label for="formatSelect">اختر صيغة التحويل:</label>
+                <select id="formatSelect">
+                    <option value="ts">TS</option>
+                    <option value="mp4">MP4</option>
+                    <option value="webm">WebM</option>
+                    <option value="mkv">MKV</option>
+                    <option value="avi">AVI</option>
+                    <option value="mov">MOV</option>
+                    <option value="flv">FLV</option>
+                </select>
+            </div>
+
+            <div id="videoList" class="video-list"></div>
+
+            <div class="convert-section">
+                <button id="convertAllBtn" disabled>تحويل جميع الملفات</button>
+                <div id="progress" class="progress-bar" hidden>
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>جميع الحقوق محفوظة © 2024 خالد دراغة</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
